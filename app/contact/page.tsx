@@ -2,20 +2,22 @@ import Image from 'next/image'
 import React from 'react'
 
 const ContactPage = () => {
+    const season = '2026';
+
     const members = [
         { name: 'Team 4198', role: 'General Contact', email: 'robocats@team4198.org', image: '/ROBOCATICON.svg' },
         { name: 'Jennifer Winkelman', role: 'Team Coach', email: 'coach@team4198.org', image: '/contact/JenniferWinkelman.png' },
         { name: 'Betty Covington-Nego', role: 'Assistant Team Coach', email: 'coach@team4198.org', image: '/contact/BettyCovingtonnego.png' },
-        { name: 'Leo Thayer', role: 'Team Captain', email: 'captain@team4198.org', image: '/contact/LeoThayer.png' },
-        { name: 'Ryan Klitzke', role: 'Lead Builder', email: 'build@team4198.org', image: '/contact/RyanKlitzke.png' },
-        { name: 'Aiden Lee', role: 'Lead Programmer', email: 'code@team4198.org', image: '/contact/AidenLee3.png' },
-        { name: 'Andrew Winkelman', role: 'Team Electrical Captain', email: 'safety@team4198.org', image: '/contact/AndrewWinkelman3.png' },
-        { name: 'Maxwell Nego', role: 'Outreach Lead', email: 'outreach@team4198.org', image: '/contact/MaxwellNego.png' },
+        { name: 'Devan Rupp', role: 'Team Captain', email: '', image: '/contact/Caden.png' },
+        { name: 'Evan Fredericks', role: 'Lead Builder', email: 'build@team4198.org', image: '/contact/Evan.png' },
+        { name: 'Joe Pauly', role: 'Lead Programmer', email: 'code@team4198.org', image: '/contact/Joe.png' },
+        { name: 'Megan Anderson', role: 'Team Electrical Captain', email: 'safety@team4198.org', image: '/contact/Megan.png' },
+        { name: 'Caden Thomson', role: 'Outreach Lead', email: 'outreach@team4198.org', image: '/contact/DevanRupp.png' },
     ]
 
     return (
         <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-4xl text-gray-200 mb-8'>2025 Season</h1>
+            <h1 className='text-4xl text-gray-200 mb-8'>{season} Season</h1>
 
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-8'>
                 {members.map((member, index) => (
