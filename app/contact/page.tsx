@@ -13,6 +13,7 @@ const ContactPage = () => {
         { name: 'Joe Pauly', role: 'Lead Programmer', email: 'code@team4198.org', image: '/contact/Joe.png' },
         { name: 'Megan Anderson', role: 'Team Electrical Captain', email: 'safety@team4198.org', image: '/contact/Megan.png' },
         { name: 'Caden Thomson', role: 'Outreach Lead', email: 'outreach@team4198.org', image: '/contact/DevanRupp.png' },
+        { name: 'Annebelle Lukens', role: 'Media Lead', email: 'media@team4198.org', image: '/contact/Annebelle.png' },
     ]
 
     return (
