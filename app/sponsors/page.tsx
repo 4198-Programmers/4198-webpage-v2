@@ -4,22 +4,34 @@ import SponsorButtons from '../components/buttons/SponsorButtons'
 
 const SponsorsPage = () => {
     const sponsors = [
-        { name: 'Waconia Public Schools', image: '/sponsors/waconia-school.png', href: 'https://www.isd110.org/' },
-        { name: 'Waconia Fire Department', image: '/sponsors/waconia-fire.png', href: 'https://www.waconiamn.gov/' },
-        { name: 'Medtronic', image: '/sponsors/medtronic.png', href: 'https://www.medtronic.com/us-en/index.html' },
-        { name: 'Tap Magic', image: '/sponsors/tapmagic.png', href: 'https://www.tapmagic.com/' },
-        { name: 'Ridgeview', image: '/sponsors/ridgeview.png', href: 'https://www.ridgeviewmedical.org/' },
-        { name: 'iFixit', image: '/sponsors/ifixit.png', href: 'https://www.ifixit.com/' },
-        { name: 'Pepsi', image: '/sponsors/pepsi.png', href: 'https://www.pepsi.com/' },
-        { name: 'Waconia Lions', image: '/sponsors/waconia-lions.svg', href: 'https://waconialionsclub.org/' },
-        { name: 'Nordic Components', image: '/sponsors/nordic-components.png', href: 'https://nordicmanufacturing.com/' },
-        { name: '3M', image: '/sponsors/3m.svg', href: 'https://www.3m.com/' },
-        { name: 'UPS', image: '/sponsors/ups.svg', href: 'https://www.ups.com/' },
-        { name: 'Rotary', image: '/sponsors/rotary.png', href: 'https://portal.clubrunner.ca/6749/' },
-        { name: 'American Family Insurance', image: '/sponsors/american-family-insurance.svg', href: 'https://www.amfam.com/' },
-        { name: 'Image Graphics', image: '/sponsors/image-graphics.svg', href: 'https://imagegraphicspremier.com/' },
-        { name: 'Precision Metalforming Association', image: '/sponsors/pma.svg', href: 'https://www.pma.org/twin-cities/' },
-        { name: 'Free Geek', image: '/sponsors/free-geek.jpg', href: 'https://www.freegeektwincities.org' },
+        { name: 'iFixit', href: 'https://www.ifixit.com/', image: '/sponsors/ifixit.png' },
+        { name: 'Pepsi', href: 'https://www.pepsi.com/', image: '/sponsors/pepsi.png' },
+        { name: '3M', href: 'https://www.3m.com/', image: '/sponsors/3m.svg' },
+        { name: 'Mackenthuns', href: 'https://mackenthuns.com/', image: '/sponsors/mackenthuns.png' },
+        { name: 'American Family', href: 'https://www.amfam.com/', image: '/sponsors/american-family-insurance.svg' },
+        { name: 'Waconia Public Schools', href: 'https://isd110.org/', image: '/sponsors/waconia-school.png' },
+        { name: 'Waconia Lions’ Club', href: 'https://waconialionsclub.org/', image: '/sponsors/waconia-lions.svg' },
+        { name: 'South Town Refrigeration', href: 'https://www.strm-mn.com/', image: '/sponsors/str.png' },
+        { name: 'Image Graphics Premiere', href: 'https://imagegraphicspremier.com/', image: '/sponsors/image-graphics.svg' },
+        { name: 'Gene Haas', href: 'https://www.haascnc.com/content/ghf/en/home.html', image: '/sponsors/haas.png' },
+        { name: 'CD Products', href: 'https://www.cdproductsinc.com/', image: '/sponsors/cd.jpg' },
+        { name: 'UPS', href: 'https://locations.theupsstore.com/mn/waconia/712-vista-blvd', image: '/sponsors/ups.svg' },
+        { name: 'Visual Impact', href: 'https://visigns.com/', image: '/sponsors/visual-impact.png' }, // todo get logo
+        { name: 'Sackett Waconia', href: 'https://www.sackettwaconia.com/', image: '/sponsors/sackett.jpg' },
+        { name: "Culvers'", href: 'https://www.culvers.com/restaurants/waconia-mn-hwy-5', image: '/sponsors/culvers.svg' },
+        { name: 'PMA (Ajax)', href: 'https://www.pma.org/home/', image: '/sponsors/pma.svg' },
+        { name: 'FreeGeek', href: 'https://www.freegeektwincities.org/', image: '/sponsors/free-geek.jpg' },
+        { name: 'TEL', href: 'https://www.tel.com/', image: '/sponsors/tel.svg' },
+        { name: 'RTX', href: 'https://www.rtx.com/', image: '/sponsors/rtx.svg' },
+        { name: 'Precision Control Services', href: 'https://www.alignable.com/waconia-mn/precision-control-services-llc', image: '/sponsors/precision-control.png' }, // todo get logo
+        { name: 'Wiha', href: 'https://www.wihatools.com/', image: '/sponsors/wiha.avif' },
+        { name: 'Medtronic', href: 'https://www.medtronic.com/en-us/index.html', image: '/sponsors/medtronic.png' },
+        { name: 'HEI Collision Center', href: 'https://www.heicollisionmn.com/', image: '/sponsors/hei.jpg' },
+        { name: 'Foxden', href: 'https://www.foxdenbgc.com/', image: '/sponsors/foxden.webp' },
+        { name: 'The Dog Nanny', href: 'https://jennathedognanny.com/', image: '/sponsors/nanny.png' },
+        { name: 'Yetzers', href: 'https://yetzers.com/', image: '/sponsors/yetzer.png' },
+        { name: 'Victoria Floral', href: 'https://www.victoriarosefloral.com/', image: '/sponsors/vrf.webp' },
+        { name: 'Victoria Burrow', href: 'https://theburrowmn.com/victoria', image: '/sponsors/burrow.webp  ' },
     ]
 
     return (
@@ -29,9 +41,15 @@ const SponsorsPage = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 place-items-center mt-8">
                 {sponsors.map((sponsor, index) => (
                     <div key={index} className="w-full h-full relative">
-                        <div className='bg-white/5 p-24 rounded-xl shadow-md hover:shadow-xl transition-all duration-300'>
-                            <a href={sponsor.href} target='_blank'>
-                                <Image src={sponsor.image} alt={sponsor.name} fill draggable={false} className="object-contain max-w-[160px] m-auto" />
+                        <div className='bg-white/5 p-6 sm:p-12 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center'>
+                            <a href={sponsor.href} target='_blank' rel='noreferrer' className="w-full h-full flex items-center justify-center">
+                                {sponsor.image ? (
+                                    <div className="relative w-full h-[72px] sm:h-[96px]" style={{color:'white'}}>
+                                        <Image src={sponsor.image} alt={sponsor.name} fill draggable={false} className="object-contain m-auto" />
+                                    </div>
+                                ) : (
+                                    <span className='text-center text-white/90 font-medium px-2'>{sponsor.name}</span>
+                                )}
                             </a>
                         </div>
                     </div>
