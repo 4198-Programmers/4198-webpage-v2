@@ -31,7 +31,7 @@ const SponsorsPage = () => {
         { name: 'The Dog Nanny', href: 'https://jennathedognanny.com/', image: '/sponsors/nanny.png' },
         { name: 'Yetzers', href: 'https://yetzers.com/', image: '/sponsors/yetzer.png' },
         { name: 'Victoria Floral', href: 'https://www.victoriarosefloral.com/', image: '/sponsors/vrf.webp' },
-        { name: 'Victoria Burrow', href: 'https://theburrowmn.com/victoria', image: '/sponsors/burrow.webp  ' },
+        { name: 'Victoria Burrow', href: 'https://theburrowmn.com/victoria', image: '/sponsors/burrow.webp' },
     ]
 
     return (
