@@ -16,7 +16,7 @@ const SponsorsPage = () => {
         { name: 'Gene Haas', href: 'https://www.haascnc.com/content/ghf/en/home.html', image: '/sponsors/haas.png' },
         { name: 'CD Products', href: 'https://www.cdproductsinc.com/', image: '/sponsors/cd.jpg' },
         { name: 'UPS', href: 'https://locations.theupsstore.com/mn/waconia/712-vista-blvd', image: '/sponsors/ups.svg' },
-        { name: 'Visual Impact', href: 'https://visigns.com/', image: '/sponsors/visual-impact.png' }, // todo get logo
+        { name: 'Fusion', href: 'https://fusionimaging.com/', image: '/sponsors/fusion.webp' },
         { name: 'Sackett Waconia', href: 'https://www.sackettwaconia.com/', image: '/sponsors/sackett.jpg' },
         { name: "Culvers'", href: 'https://www.culvers.com/restaurants/waconia-mn-hwy-5', image: '/sponsors/culvers.svg' },
         { name: 'PMA (Ajax)', href: 'https://www.pma.org/home/', image: '/sponsors/pma.svg' },
