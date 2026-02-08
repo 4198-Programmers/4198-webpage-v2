@@ -44,7 +44,7 @@ const SponsorsPage = () => {
                         <div className='bg-white/5 p-6 sm:p-12 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center'>
                             <a href={sponsor.href} target='_blank' rel='noreferrer' className="w-full h-full flex items-center justify-center">
                                 {sponsor.image ? (
-                                    <div className="relative w-full h-[72px] sm:h-[96px]" style={{color:'white'}}>
+                                    <div className="relative w-full h-[72px] sm:h-24" style={{color:'white'}}>
                                         <Image src={sponsor.image} alt={sponsor.name} fill draggable={false} className="object-contain m-auto" />
                                     </div>
                                 ) : (
