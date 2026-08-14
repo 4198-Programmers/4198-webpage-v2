@@ -19,7 +19,7 @@ const Footer = () => {
             <Separator />
 
             <div className='flex flex-row'>
-                <p className='text-gray-300'>2025 RoboCats</p>
+                <p className='text-gray-300'>2026 RoboCats</p>
 
                 <div className='ml-auto space-x-4 flex flex-row items-center scale-80'>
                     {links.map(link => (

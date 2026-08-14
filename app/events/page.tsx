@@ -1,12 +1,17 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import React from 'react'
+import React, { JSX } from 'react'
+
+interface EventItem {
+    name: string
+    date: Date
+    time: string
+}
 
 const EventsPage = () => {
     // You could also pull this from an API instead of hard coding the events into here
 
-    const events = [
-        { name: 'EMCC Robotics Invitational', date: new Date('2025-10-26'), time: '8:00 AM - 5:00 PM' },
-        { name: 'Minne Mini Robotics Invitational', date: new Date('2025-11-23'), time: '8:00 AM - 5:00 PM' }
+    const events: EventItem[] = [
+        // { name: '', date: new Date('YYYY-MM-DD'), time: '' },
     ]
 
     return (
@@ -23,7 +28,7 @@ const EventsPage = () => {
                 </TableHeader>
 
                 <TableBody>
-                    {events.map((event, index) => {
+                    {events.map((event: EventItem, index: number): React.ReactNode => {
                         if (Date.now() > event.date.getTime()) {
                             // Skip past events, no need to update every event. Only update once a year
                             return null;
