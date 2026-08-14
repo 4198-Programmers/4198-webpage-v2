@@ -14,6 +14,7 @@ const ContactPage = () => {
         { name: 'Megan Anderson', role: 'Team Electrical Captain', email: 'safety@team4198.org', image: '/contact/Megan.png' },
         { name: 'Varian & Lucian', role: 'Outreach Lead', email: 'outreach@team4198.org', image: '/contact/generic-profile-picture.jpeg' },
         { name: 'Marcus Bauer', role: 'Media Lead', email: 'media@team4198.org', image: '/contact/generic-profile-picture.jpeg' },
+        { name: 'Eric Johnson', role: 'Safety Lead', email: 'ericjohnson@isd110.org', image: '/contact/generic-profile-picture.jpeg' }
     ]
 
     return (
