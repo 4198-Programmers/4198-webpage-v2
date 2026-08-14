@@ -8,12 +8,12 @@ const ContactPage = () => {
         { name: 'Team 4198', role: 'General Contact', email: 'robocats@team4198.org', image: '/ROBOCATICON.svg' },
         { name: 'Jennifer Winkelman', role: 'Team Coach', email: 'coach@team4198.org', image: '/contact/JenniferWinkelman.png' },
         { name: 'Betty Covington-Nego', role: 'Assistant Team Coach', email: 'coach@team4198.org', image: '/contact/BettyCovingtonnego.png' },
-        { name: 'Devan Rupp', role: 'Team Captain', email: '', image: '/contact/Caden.png' },
+        { name: 'Owen Stutelberg', role: 'Team Captain', email: 'owenstutelberg@gmail.com', image: '/contact/generic-profile-picture.jpeg' },
         { name: 'Evan Fredericks', role: 'Lead Builder', email: 'build@team4198.org', image: '/contact/Evan.png' },
         { name: 'Joe Pauly', role: 'Lead Programmer', email: 'code@team4198.org', image: '/contact/Joe.png' },
         { name: 'Megan Anderson', role: 'Team Electrical Captain', email: 'safety@team4198.org', image: '/contact/Megan.png' },
-        { name: 'Caden Thomson', role: 'Outreach Lead', email: 'outreach@team4198.org', image: '/contact/DevanRupp.png' },
-        { name: 'Annebelle Lukens', role: 'Media Lead', email: 'media@team4198.org', image: '/contact/Annebelle.png' },
+        { name: 'Varian & Lucian', role: 'Outreach Lead', email: 'outreach@team4198.org', image: '/contact/generic-profile-picture.jpeg' },
+        { name: 'Marcus Bauer', role: 'Media Lead', email: 'media@team4198.org', image: '/contact/generic-profile-picture.jpeg' },
     ]
 
     return (
