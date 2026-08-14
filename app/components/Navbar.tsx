@@ -10,7 +10,7 @@ const Navbar = () => {
     const links = [
         { href: '/about', label: 'About' },
         { href: '/contact', label: 'Contact Us' },
-        { href: '/events', label: 'Events' },
+        { href: 'https://calendar.google.com/calendar/u/0?cid=d2Fjb25pYXJvYm9jYXRzNDE5OEBnbWFpbC5jb20', label: 'Calendar' },
         { href: '/sponsors', label: 'Sponsors' }
     ];
 
