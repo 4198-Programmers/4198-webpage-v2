@@ -22,7 +22,7 @@ const AboutPage = () => {
                 <p className='text-main mt-8'>The RoboCats compete in multiple regional events on and off season. They have qualified and competed in the Minnesota State High School Robotics Tournament in 2015 and 2017. They have also qualified and competed in the World Championship in 2015, 2017 and 2018</p>
             </div>
 
-            <h1 className='text-4xl text-white font-bold'>Season Breakdown</h1>
+            <h1 className="mt-16 text-4xl text-white font-bold">Season Breakdown</h1>
 
             <div className='flex justify-center mt-24'>
                 <div className='columns-1 sm:columns-2 md:columns-3 space-y-12 columns'>
