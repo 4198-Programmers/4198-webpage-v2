@@ -11,6 +11,7 @@ const Navbar = () => {
         { href: '/about', label: 'About' },
         { href: '/contact', label: 'Contact Us' },
         { href: '/calendar', label: 'Calendar' },
+        { href: '/competitions', label: 'Competitions' },
         { href: '/sponsors', label: 'Sponsors' }
     ];
 
