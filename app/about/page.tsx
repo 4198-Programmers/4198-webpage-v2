@@ -2,24 +2,37 @@ import Image from 'next/image'
 import React from 'react'
 
 const AboutPage = () => {
-    const images = [
-        '/about/Picture1.webp',
-        '/about/Picture2.webp',
-        '/about/Picture3.webp',
-        '/about/Picture4.webp',
-        '/about/Picture5.webp',
-        '/about/Picture6.webp',
-        '/about/Picture7.webp',
-        '/about/Picture8.webp',
+    const sideImages = [
+        { src: '/about/Picture1.webp', alt: '' },
+        { src: '/about/Picture2.webp', alt: '' },
+        { src: '/about/Picture3.webp', alt: '' },
+        { src: '/about/Picture4.webp', alt: '' },
+        { src: '/about/Picture5.webp', alt: '' },
+        { src: '/about/Picture6.webp', alt: '' },
+        { src: '/about/Picture7.webp', alt: '' },
+        { src: '/about/Picture8.webp', alt: '' },
+        { src: '/about/2023SAM.jpg', alt: '' },   
     ]
 
     return (
-        <div className='flex flex-col items-center'>
+        <div className='relative flex flex-col items-center'>
             <h1 className='text-4xl text-white font-bold'>About Us</h1>
+
+            <aside className='pointer-events-none absolute left-0 top-[18rem] hidden w-36 flex-col gap-6 2xl:flex' aria-label='RoboCats team photos'>
+                {sideImages.slice(0, 4).map((image) => (
+                    <Image key={image.src} src={image.src} alt={image.alt} width={144} height={108} className='rounded-lg object-cover shadow-lg' />
+                ))}
+            </aside>
+
+            <aside className='pointer-events-none absolute right-0 top-[18rem] hidden w-36 flex-col gap-6 2xl:flex' aria-label='More RoboCats team photos'>
+                {sideImages.slice(4).map((image) => (
+                    <Image key={image.src} src={image.src} alt={image.alt} width={144} height={108} className='rounded-lg object-cover shadow-lg' />
+                ))}
+            </aside>
 
             <div className='max-w-4xl mt-10'>
                 <p className='text-main'>
-                    The RoboCats are a FIRST Robotics high school competition team from Waconia, Minnesota. They are supported by ISD 110 and the Minnesota State High School Sports League. The team was started in 2012, with less than 10 members. Each year the RoboCats team has continued to grow and there are 27 current members on the team
+                    The RoboCats are a FIRST Robotics high school competition team from Waconia, Minnesota. They are supported by ISD 110 and the Minnesota State High School Sports League. The team was started in 2012, with less than 10 members. Each year the RoboCats team has continued to grow and there are 27 current members on the team.
                 </p>
 
                 <p className='text-main mt-8'>
@@ -29,11 +42,11 @@ const AboutPage = () => {
 
             <hr className='my-6 w-full max-w-4xl border-gray-400'/>
 
-            <h1 className="text-4xl text-white font-bold mt-6">The Game</h1>
+            <h2 className="text-4xl text-white font-bold mt-6">The Game</h2>
 
             <div className='max-w-4xl mt-10'>
                 <p className='text-main text-center'>
-                    Every year, First Robotics Competition introduces a new game that typically follows the same guidelines. Two teams of three robotics organizations face off on a field trying to score points through a variety of methods.
+                    Each year, FIRST Robotics Competition (FRC) introduces a new game. In each match, two alliances of three teams compete on a field, earning points by completing different objectives.
                 </p>
 
                 <p className='text-main text-center font-bold mt-4'>
@@ -71,13 +84,13 @@ const AboutPage = () => {
 
             <hr className='my-6 w-full max-w-4xl border-gray-400'/>
 
-            <h1 className="text-4xl text-white font-bold mt-6">Season Breakdown</h1>
+            <h2 className="text-4xl text-white font-bold mt-6">Season Breakdown</h2>
 
             <div className='flex w-full max-w-4xl flex-col gap-50 mt-10 md:flex-row'>
                 <div className='flex w-full flex-col items-center text-center md:w-1/2'>
-                    <h2 className='text-3xl text-white font-bold'>
+                    <h3 className='text-3xl text-white font-bold'>
                         Off Season
-                    </h2>
+                    </h3>
 
                     <p className='text-main mt-4'>
                         Timeframe: September 10th - January 8th
@@ -89,9 +102,9 @@ const AboutPage = () => {
                 </div>
 
                 <div className='flex w-full flex-col items-center text-center md:w-1/2'>
-                    <h2 className='text-3xl text-white font-bold'>
+                    <h3 className='text-3xl text-white font-bold'>
                         On Season
-                    </h2>
+                    </h3>
 
                     <p className='text-main mt-4'>
                         Timeframe: January 9th - May
