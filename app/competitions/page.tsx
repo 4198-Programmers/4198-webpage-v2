@@ -7,6 +7,8 @@ type Competition = {
 };
 
 const competitions: Competition[] = [
+    {name: 'Great Northern Regional', url: 'https://frc-events.firstinspires.org/2025/NDGF', year: 2025},
+    {name: 'Minnesota North Star Regional', url: 'https://frc-events.firstinspires.org/2025/MNUM', year: 2025},
     {name: 'Great Northern Regional', url: 'https://frc-events.firstinspires.org/2026/NDGF', year: 2026},
     {name: 'Minnesota North Star Regional', url: 'https://frc-events.firstinspires.org/2026/MNUM', year: 2026},
 ];
