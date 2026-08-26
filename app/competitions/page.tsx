@@ -22,8 +22,6 @@ const competitionsPage = () => {
         <div className='flex flex-col items-center justify-center px-6'>
             <h1 className='text-4xl text-white font-bold'>Competitions</h1>
 
-            <p className='text-main mt-4 text-center md:text-center'>Learn more about our upcoming competitions.</p>
-
             <div className='mt-10 w-full max-w-4xl'>
                 {competitions.length > 0 ? Object.entries(competitionsByYear)
                     .sort(([yearA], [yearB]) => Number(yearA) - Number(yearB))
