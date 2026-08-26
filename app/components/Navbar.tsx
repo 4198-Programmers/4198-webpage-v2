@@ -9,9 +9,10 @@ import Link from 'next/link';
 const Navbar = () => {
     const links = [
         { href: '/about', label: 'About' },
-        { href: '/contact', label: 'Contact Us' },
         { href: '/calendar', label: 'Calendar' },
         { href: '/competitions', label: 'Competitions' },
+        { href: '/contact', label: 'Contact Us' },
+        { href: '/about/new-members', label: 'New Members' },
         { href: '/sponsors', label: 'Sponsors' }
     ];
 
