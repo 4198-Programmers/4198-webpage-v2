@@ -25,12 +25,12 @@ const AboutPage = () => {
             <h1 className="mt-16 text-4xl text-white font-bold">Season Breakdown</h1>
 
             <div className='w-full max-w-4xl mt-10'>
-                <h2 className='text-4xl text-white font-bold'>
+                <h6 className='text-4xl text-white font-bold'>
                     Off Season
-                </h2>
-                <h2 className='mt-4 text-4xl text-white font-bold'>
+                </h6>
+                <h5 className='mt-4 text-4xl text-white font-bold'>
                     On Season
-                </h2>
+                </h5>
             </div>
 
             <div className='flex justify-center mt-24'>
