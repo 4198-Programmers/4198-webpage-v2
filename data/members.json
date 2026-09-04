@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Team 4198", 
+        "role": "General Contact", 
+        "email": "robocats@team4198.org", 
+        "image": "/ROBOCATICON.svg"
+    },
+    {
+        "name": "Jennifer Winkelman", 
+        "role": "Team Coach", 
+        "email": "coach@team4198.org", 
+        "image": "/contact/JenniferWinkelman.png"
+    },
+    {
+        "name": "Betty Covington-Nego", 
+        "role": "Assistant Team Coach", 
+        "email": "coach@team4198.org", 
+        "image": "/contact/BettyCovingtonnego.png"
+    },
+    {
+        "name": "Owen Stutelberg", 
+        "role": "Team Captain", 
+        "email": "owenstutelberg@gmail.com", 
+        "image": "/contact/OwenStutelberg.png"
+    },
+    {
+        "name": "Evan Fredericks", 
+        "role": "Lead Builder", 
+        "email": "build@team4198.org", 
+        "image": "/contact/Evan.png"
+    },
+    {
+        "name": "Joe Pauly", 
+        "role": "Lead Programmer", 
+        "email": "code@team4198.org", 
+        "image": "/contact/Joe.png"
+    },
+    {
+        "name": "Megan Anderson", 
+        "role": "Team Electrical Captain", 
+        "email": "safety@team4198.org", 
+        "image": "/contact/Megan.png"
+    },
+    {
+        "name": "Varian & Lucian", 
+        "role": "Outreach Lead", 
+        "email": "outreach@team4198.org", 
+        "image": "/contact/Lucian.png"
+    },
+    {
+        "name": "Marcus Bauer", 
+        "role": "Media Lead", 
+        "email": "media@team4198.org", 
+        "image": "/contact/MarcusBauer.png"
+    },
+    {
+        "name": "Eric Johnson", 
+        "role": "Safety Lead", 
+        "email": "ericjohnson@isd110.org", 
+        "image": "/contact/generic-profile-picture.jpeg"
+    }
+]

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import teamData from '@/data/teams.json'
 
 type Team = {
     name: string;
@@ -10,74 +11,7 @@ type Team = {
     }[];
 };
 
-const teams: Team[] = [
-    {
-        name: 'Build Team',
-        description: 'This team is in charge of designing and building the robot BEFORE Week Zero.',
-        roles: [
-            { name: 'Build Captain', description: 'Leads the build team and coordinates modeling, prototyping, and building.' },
-            { name: 'Build Member', description: 'Helps the team build the robot.' },
-        ],
-    },
-    {
-        name: 'Programming Team',
-        description: 'This team is in charge of coding and testing the robot.',
-        roles: [
-            { name: 'Programming Captain', description: 'Organizes programming goals, reviews code, and helps test the robot' },
-            { name: 'Programming Member', description: 'Helps the team program the robot.' },
-        ],
-    },
-    {
-        name: 'Electrical Team',
-        description: 'This team is in charge of wiring the robot.',
-        roles: [
-            { name: 'Electrical Captain', description: 'Leads the electrical team in wiring and wire organization. ' },
-            { name: 'Electrical Member', description: 'Aids the electrical team in wiring the robot efficiently and effectively.' },
-        ],
-    },
-    {
-        name: 'Outreach',
-        description: 'Reaches out to potential sponsors to fund our robotics team',
-        roles: [
-            { name: 'Outreach Member', description: 'Sends out emails to companies to help financially aid the team.' },
-        ],
-    },
-    {
-        name: 'Media',
-        description: 'Promotes our team and shares upcoming events through social media.',
-        roles: [
-            { name: 'Media Member', description: 'Directs photography, video, and social media content for the team.' },
-        ],
-    },
-    {
-        name: 'Strategy Team',
-        description: 'This team is in charge of watching matches during competitions and relaying information about other robots back to the Drive Coach/Drive Team.',
-        roles: [
-            { name: 'Strategy Member', description: 'In charge of robot data collection during matches.'}
-        ],
-    },
-    {
-        name: 'Drive Team',
-        description: 'This team is responsible for competing in the matches.',
-        roles: [
-            { name: 'Driver', description: 'Drives the robot during matches.' },
-            { name: 'Buttons/Operator', description: 'Manages controls and game piece manipulation mid-match.' },
-            { name: 'Drive Coach', description: 'Helps direct match strategy and communicates with drivers during competition.' },
-            { name: 'Human Player', description: 'Launches game pieces into goals mid-match to gain points for the alliance.' },
-            { name: 'Technician', description: 'Helps with match setup by delivering and removing the robot from the field alongside looking for possible damage to the robot.' },
-
-        ],
-    },
-    {
-        name: 'Others',
-        description: 'This section is for other important roles that are independent of the other categories, but crucial to the team.',
-        roles: [
-            { name: 'Team Captain', description: 'Team captain is the captain of captains. They are responsible for the organization of the team throughout the season by delegating tasks to the other captains.' },
-            { name: 'Safety Captain', description: 'Responsible for the overall safety of the team. Enforces safe practices for the entire team.' },
-
-        ]
-    },
-];
+const teams: Team[] = teamData as Team[];
 
 const NewMembersPage = () => {
     return (
@@ -85,7 +19,11 @@ const NewMembersPage = () => {
             <h1 className='text-4xl text-white font-bold'>New Members Information</h1>
 
             <p className='text-main mt-4 text-center'>
-                New members that have yet to sign up can sign up at PLACEHOLDER. Meetings will start September 10th and will be held every Monday and Thursday 3:30pm-6:00pm.
+                New members that have yet to sign up can sign up{' '}
+                <a href='https://isd110.org/activities-registration' target='_blank' rel='noreferrer' className='text-main underline hover:text-white'>
+                    here
+                </a>
+                . Meetings will start September 10th and will be held every Monday and Thursday 3:30pm-6:00pm.
             </p>
 
             <p className='text-main mt-4 text-center'>
@@ -107,7 +45,7 @@ const NewMembersPage = () => {
             </h2>
 
             <p className='text-main mt-4 text-center'>
-                On the robotics team, we are always in need of new students to help our team reach its objectives. There are many, many ways to help out. Not all of them require the ability to make a robot.
+                On the robotics team, we are always in need of new students to help our team reach its goals. There are many, many ways to help out. Not all of them require the ability to make a robot.
             </p>
 
             <hr className='my-6 w-full max-w-4xl border-gray-400'/>

@@ -1,12 +1,9 @@
 import Image from "next/image";
 import HomeScreenButton from "./components/buttons/HomeScreenButton";
+import upcomingEventsData from '@/data/upcoming-events.json';
 
 export default function Home() {
-  const upcomingEvents = [
-    { date: 'September 10th', title: 'Off-Season Meetings Begin 3:30pm-6:00pm' },
-    { date: 'September 14th', title: 'Parent/Guardian + Student Meeting 7:00pm in the Waconia Middle School Auditorium' },
-    { date: 'January 9th', title: 'Kickoff (Game Reveal)' },
-  ];
+  const upcomingEvents = upcomingEventsData as Array<{ date: string; title: string }>; 
 
   return (
     <div className='flex flex-col items-center pt-24'>
