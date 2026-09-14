@@ -20,7 +20,7 @@
     {
         "name": "Owen Stutelberg", 
         "role": "Team Captain", 
-        "email": "owenstutelberg@gmail.com", 
+        "email": "captain@team4198.org", 
         "image": "/contact/OwenStutelberg.png"
     },
     {
@@ -30,7 +30,7 @@
         "image": "/contact/Evan.png"
     },
     {
-        "name": "Joe Pauly", 
+        "name": "Joey Pauly", 
         "role": "Lead Programmer", 
         "email": "code@team4198.org", 
         "image": "/contact/Joe.png"
@@ -38,11 +38,11 @@
     {
         "name": "Megan Anderson", 
         "role": "Team Electrical Captain", 
-        "email": "safety@team4198.org", 
+        "email": "electrical@team4198.org", 
         "image": "/contact/Megan.png"
     },
     {
-        "name": "Varian & Lucian", 
+        "name": "Varian Loya & Lucian Urzedowski", 
         "role": "Outreach Lead", 
         "email": "outreach@team4198.org", 
         "image": "/contact/Lucian.png"
@@ -56,7 +56,7 @@
     {
         "name": "Eric Johnson", 
         "role": "Safety Lead", 
-        "email": "ericjohnson@isd110.org", 
+        "email": "safety@team4198.org", 
         "image": "/contact/generic-profile-picture.jpeg"
     }
 ]
