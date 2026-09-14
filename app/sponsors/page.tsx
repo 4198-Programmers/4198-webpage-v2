@@ -25,8 +25,6 @@ const SponsorsPage = () => {
                     </div>
                 ))}
             </div>
-
-            <SponsorButtons />
         </div>
     )
 }
